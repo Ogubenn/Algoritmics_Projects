@@ -11,3 +11,4 @@ C:\c#Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.m
 C:\c#Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
 C:\c#Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\c#Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\c#Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\TakipSistemi.csproj.AssemblyReference.cache

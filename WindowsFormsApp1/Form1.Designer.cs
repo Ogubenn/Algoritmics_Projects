@@ -50,8 +50,6 @@ namespace WindowsFormsApp1
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.richTextBox7 = new System.Windows.Forms.RichTextBox();
             this.chkRandevuAlindi = new System.Windows.Forms.CheckBox();
-            this.chkRandevuIptal = new System.Windows.Forms.CheckBox();
-            this.chkRandevuGirdi = new System.Windows.Forms.CheckBox();
             this.richTextBox8 = new System.Windows.Forms.RichTextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.flowLayoutPanelHocalar = new System.Windows.Forms.FlowLayoutPanel();
@@ -63,6 +61,8 @@ namespace WindowsFormsApp1
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chkRandevuGirdi = new System.Windows.Forms.CheckBox();
+            this.chkRandevuIptal = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,6 +211,7 @@ namespace WindowsFormsApp1
             // 
             // dateTimePickerRandevuTarihi
             // 
+            this.dateTimePickerRandevuTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePickerRandevuTarihi.Location = new System.Drawing.Point(540, 12);
             this.dateTimePickerRandevuTarihi.Name = "dateTimePickerRandevuTarihi";
             this.dateTimePickerRandevuTarihi.Size = new System.Drawing.Size(200, 22);
@@ -218,14 +219,14 @@ namespace WindowsFormsApp1
             // 
             // txtAmoLinki
             // 
-            this.txtAmoLinki.Location = new System.Drawing.Point(540, 51);
+            this.txtAmoLinki.Location = new System.Drawing.Point(540, 95);
             this.txtAmoLinki.Name = "txtAmoLinki";
             this.txtAmoLinki.Size = new System.Drawing.Size(200, 22);
             this.txtAmoLinki.TabIndex = 16;
             // 
             // richTextBox6
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(403, 51);
+            this.richTextBox6.Location = new System.Drawing.Point(403, 95);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.Size = new System.Drawing.Size(131, 22);
             this.richTextBox6.TabIndex = 17;
@@ -233,7 +234,7 @@ namespace WindowsFormsApp1
             // 
             // richTextBox7
             // 
-            this.richTextBox7.Location = new System.Drawing.Point(403, 98);
+            this.richTextBox7.Location = new System.Drawing.Point(403, 156);
             this.richTextBox7.Name = "richTextBox7";
             this.richTextBox7.Size = new System.Drawing.Size(131, 76);
             this.richTextBox7.TabIndex = 18;
@@ -243,34 +244,12 @@ namespace WindowsFormsApp1
             // 
             this.chkRandevuAlindi.AutoSize = true;
             this.chkRandevuAlindi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkRandevuAlindi.Location = new System.Drawing.Point(540, 96);
+            this.chkRandevuAlindi.Location = new System.Drawing.Point(540, 156);
             this.chkRandevuAlindi.Name = "chkRandevuAlindi";
             this.chkRandevuAlindi.Size = new System.Drawing.Size(125, 21);
             this.chkRandevuAlindi.TabIndex = 19;
             this.chkRandevuAlindi.Text = "Randevu Alındı";
             this.chkRandevuAlindi.UseVisualStyleBackColor = true;
-            // 
-            // chkRandevuIptal
-            // 
-            this.chkRandevuIptal.AutoSize = true;
-            this.chkRandevuIptal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkRandevuIptal.Location = new System.Drawing.Point(540, 126);
-            this.chkRandevuIptal.Name = "chkRandevuIptal";
-            this.chkRandevuIptal.Size = new System.Drawing.Size(117, 21);
-            this.chkRandevuIptal.TabIndex = 20;
-            this.chkRandevuIptal.Text = "Randevu İptal";
-            this.chkRandevuIptal.UseVisualStyleBackColor = true;
-            // 
-            // chkRandevuGirdi
-            // 
-            this.chkRandevuGirdi.AutoSize = true;
-            this.chkRandevuGirdi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkRandevuGirdi.Location = new System.Drawing.Point(540, 153);
-            this.chkRandevuGirdi.Name = "chkRandevuGirdi";
-            this.chkRandevuGirdi.Size = new System.Drawing.Size(136, 21);
-            this.chkRandevuGirdi.TabIndex = 21;
-            this.chkRandevuGirdi.Text = "Randevuya Girdi";
-            this.chkRandevuGirdi.UseVisualStyleBackColor = true;
             // 
             // richTextBox8
             // 
@@ -283,7 +262,7 @@ namespace WindowsFormsApp1
             // btnKaydet
             // 
             this.btnKaydet.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnKaydet.Location = new System.Drawing.Point(403, 264);
+            this.btnKaydet.Location = new System.Drawing.Point(455, 302);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(202, 148);
             this.btnKaydet.TabIndex = 24;
@@ -317,7 +296,7 @@ namespace WindowsFormsApp1
             // 
             // richTextBox9
             // 
-            this.richTextBox9.Location = new System.Drawing.Point(403, 211);
+            this.richTextBox9.Location = new System.Drawing.Point(403, 262);
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.Size = new System.Drawing.Size(131, 22);
             this.richTextBox9.TabIndex = 28;
@@ -327,7 +306,7 @@ namespace WindowsFormsApp1
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(555, 211);
+            this.comboBox1.Location = new System.Drawing.Point(555, 260);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 29;
@@ -338,7 +317,7 @@ namespace WindowsFormsApp1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLabel1.Location = new System.Drawing.Point(451, 415);
+            this.linkLabel1.Location = new System.Drawing.Point(552, 457);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(154, 17);
             this.linkLabel1.TabIndex = 31;
@@ -377,6 +356,28 @@ namespace WindowsFormsApp1
             this.pictureBox1.Size = new System.Drawing.Size(116, 120);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
+            // 
+            // chkRandevuGirdi
+            // 
+            this.chkRandevuGirdi.AutoSize = true;
+            this.chkRandevuGirdi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chkRandevuGirdi.Location = new System.Drawing.Point(540, 210);
+            this.chkRandevuGirdi.Name = "chkRandevuGirdi";
+            this.chkRandevuGirdi.Size = new System.Drawing.Size(136, 21);
+            this.chkRandevuGirdi.TabIndex = 21;
+            this.chkRandevuGirdi.Text = "Randevuya Girdi";
+            this.chkRandevuGirdi.UseVisualStyleBackColor = true;
+            // 
+            // chkRandevuIptal
+            // 
+            this.chkRandevuIptal.AutoSize = true;
+            this.chkRandevuIptal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chkRandevuIptal.Location = new System.Drawing.Point(540, 183);
+            this.chkRandevuIptal.Name = "chkRandevuIptal";
+            this.chkRandevuIptal.Size = new System.Drawing.Size(117, 21);
+            this.chkRandevuIptal.TabIndex = 20;
+            this.chkRandevuIptal.Text = "Randevu İptal";
+            this.chkRandevuIptal.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -447,8 +448,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.RichTextBox richTextBox7;
         private System.Windows.Forms.CheckBox chkRandevuAlindi;
-        private System.Windows.Forms.CheckBox chkRandevuIptal;
-        private System.Windows.Forms.CheckBox chkRandevuGirdi;
         private System.Windows.Forms.RichTextBox richTextBox8;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelHocalar;
@@ -460,6 +459,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox chkRandevuGirdi;
+        private System.Windows.Forms.CheckBox chkRandevuIptal;
     }
 }
 

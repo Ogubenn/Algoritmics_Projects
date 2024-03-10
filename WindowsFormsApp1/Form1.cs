@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             randevu[1] = txtGsm.Text;
             randevu[2] = GetSecilenKurslar();
             randevu[3] = GetSecilenHocalar();
-            randevu[4] = dateTimePickerRandevuTarihi.Value.ToShortDateString();
+            randevu[4] = dateTimePickerRandevuTarihi.Value.ToString("dd.MM.yyyy HH:mm");
             randevu[5] = txtAmoLinki.Text;
             randevu[6] = GetRandevuDurumu();
             randevu[7] = comboBox2.SelectedItem.ToString();
